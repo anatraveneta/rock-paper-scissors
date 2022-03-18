@@ -4,9 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock, Paper, Scissors</title>
+    <script src="./js/javascript.js" defer></script>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <script src="./js/javascript.js"></script>
+    <div class="hero">
+        <h1 class="page-title">Rock, Paper, Scissors</h1>
+    </div>
+    <h2>Show your strategy skills against our <span class="popup">AI</span><sup><small>TM</small></sup> engine</h2>
+    <div class="output-container">
+        <div class="message-container">
+            <p id="player-choice" class="choice-message"></p>
+            <img class="choice-img"
+                id="player-choice-img"
+                src="./img/empty-transparent-box.png"
+                alt="Picture of the player's move">
+        </div>        
+        <div class="score-container">
+            <h1 class="score-title">Score</h1>
+            <div class="display-container">
+                <button class="score-display" id="player-score">0</button>
+                <button class="score-display" id="pc-score">0</button>
+            </div>
+            <p id="what-happens"></p>
+            <p id="outcome"></p>
+        </div>
+        <div class="message-container">
+            <p id="pc-choice" class="choice-message"></p>
+            <img class="choice-img"
+                id="pc-choice-img"
+                src="./img/empty-transparent-box.png"
+                alt="Picture of the PC's move">
+        </div>
+    </div>
+    <div class="buttons-container">
+        <img class = "arrow-img" src="./img/texto_intro_botones.png" alt="right the right images to play">
+        <div class="choice-container">
+            <h1 class="button-title">R</h1>
+                <button data-key="82" id="rock" class="click-button">
+                    <img class="button-img" src="./img/rock_button.png" alt="rock">
+                </button>
+        </div>
+        <div class="choice-container">
+            <h1 class="button-title">P</h1>
+            <button data-key="80" id="paper" class="click-button">
+                <img class="button-img" src="./img/paper_button.png" alt="paper">
+            </button>
+        </div>
+        <div class="choice-container">
+            <h1 class="button-title">S</h1>
+            <button data-key="83" id="scissors" class="click-button">
+                <img class="button-img" src="./img/scissors_button.png" alt="scissors">
+            </button>
+        </div>
+    </div>
+    <div class="foot">
+        <h6 class="page-foot">2022</h3>
+    </div>
 </body>
 </html>
