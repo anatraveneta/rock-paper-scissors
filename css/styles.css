@@ -147,3 +147,7 @@ p {
 .replay {
     pointer-events: all;
 }
+
+.pop-up {
+    text-decoration: none !important;
+}

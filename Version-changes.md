@@ -1,0 +1,1 @@
+Add pop-up showing the "AI" algorithm
